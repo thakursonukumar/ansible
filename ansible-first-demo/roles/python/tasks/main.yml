@@ -16,6 +16,12 @@
     path: ./basic-http-server/test.txt
     state: touch
 
+- name: Creating file with content
+  file:
+    path: ./basic-http-server/content.txt
+    content: |
+      Hello world.
+      Hello my dear, you'r my world.
 
 # - name: install apache2
 #   become: yes
