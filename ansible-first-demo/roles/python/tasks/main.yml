@@ -17,8 +17,8 @@
     state: touch
 
 - name: Creating file with content
-  file:
-    path: ./basic-http-server/content.txt
+  copy:
+    dest: ./basic-http-server/my-content.txt
     content: |
       Hello world.
       Hello my dear, you'r my world.
